@@ -1,0 +1,296 @@
+# depslib dependency file v1.0
+1565320675 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cbinarygene.cpp
+	<math.h>
+	"CBinarygene.h"
+	"../Util/CRandomgenerator.h"
+	"../Util/log.hpp"
+	"GaUtilityFunction.h"
+
+1565319573 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cbinarygene.h
+	"CGenebase.h"
+	"GaDeclaration.h"
+	"../Util/Bitset.h"
+	"../IACS.h"
+
+1565319511 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgenebase.h
+	<vector>
+	"GaDeclaration.h"
+	"../Util/Bitset.h"
+	"../IACS.h"
+
+1553219400 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\gadeclaration.h
+
+1565316067 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\bitset.h
+	<boost/dynamic_bitset.hpp>
+	<boost/utility/binary.hpp>
+
+1560330833 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\iacs.h
+	<stdexcept>
+	<boost/throw_exception.hpp>
+	"assert.h"
+	<iostream>
+
+1538303911 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\crandomgenerator.h
+	"Point-Vector.h"
+
+1538573561 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\point-vector.h
+	<Eigen/Core>
+	<Eigen/Dense>
+
+1550761059 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\log.hpp
+	<string>
+	<iostream>
+	<fstream>
+	"../IACS.h"
+	"prefixedoutstream.hpp"
+	"nulloutstream.hpp"
+
+1537706838 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\prefixedoutstream.hpp
+	<cstdlib>
+	<cstdio>
+	<cstring>
+	<cctype>
+	<climits>
+	<cfloat>
+	<cstdint>
+	<stdexcept>
+	<tuple>
+	<utility>
+	"prefixedoutstream_impl.hpp"
+
+1537706676 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\prefixedoutstream_impl.hpp
+	"prefixedoutstream.hpp"
+	<iostream>
+	<sstream>
+
+1537706621 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\nulloutstream.hpp
+	<iostream>
+	<streambuf>
+	<string>
+
+1553220090 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\gautilityfunction.h
+	<string>
+	<vector>
+	"GaDeclaration.h"
+	"../Util/Bitset.h"
+	"../IACS.h"
+
+1565403370 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaengine.cpp
+	"CGAEngine.h"
+	"CSelector.h"
+	"CEvaluator.h"
+	"CCross.h"
+	"CElist.h"
+	"CMutator.h"
+	"CEvaluator.h"
+	"CFitnessScaling.h"
+	"CGaOperatorBase.h"
+	"CGaparameter.h"
+	"../Util/log.hpp"
+	"../IACS.h"
+
+1560321981 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaengine.h
+	<iostream>
+	<vector>
+	"GaDeclaration.h"
+	"GaUtilityFunction.h"
+	"../IACS.h"
+
+1538749258 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cselector.h
+	"CGpopulation.h"
+	"CGaOperatorBase.h"
+
+1565400674 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgpopulation.h
+	<string>
+	<iostream>
+	<vector>
+	"CGaparameter.h"
+	"CGenome.h"
+	"GaDeclaration.h"
+	"../IACS.h"
+
+1565148510 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaparameter.h
+	<string>
+	<map>
+	<vector>
+	"GaDeclaration.h"
+	"../IACS.h"
+
+1565362555 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgenome.h
+	<vector>
+	<string>
+	"CGenebase.h"
+	"GaDeclaration.h"
+	"../Util/Bitset.h"
+	"../IACS.h"
+
+1538738370 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaoperatorbase.h
+	"CGpopulation.h"
+
+1560334024 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cevaluator.h
+	<vector>
+	<map>
+	<iostream>
+	"CGpopulation.h"
+	"CGaOperatorBase.h"
+	"../Util/Bitset.h"
+	"GaDeclaration.h"
+
+1538738370 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\ccross.h
+	"CGpopulation.h"
+	"CGaOperatorBase.h"
+
+1565402768 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\celist.h
+	"CGenome.h"
+	"CGpopulation.h"
+	"CGaOperatorBase.h"
+
+1553219546 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cmutator.h
+	"CGpopulation.h"
+	"CGaOperatorBase.h"
+	"../IACS.h"
+
+1560008971 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cfitnessscaling.h
+	"CGaOperatorBase.h"
+	"CGpopulation.h"
+
+1565436567 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaparameter.cpp
+	"CGaparameter.h"
+	"GaUtilityFunction.h"
+	"../Util/log.hpp"
+	"../IACS.h"
+
+1565316217 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgenebase.cpp
+	"CGenebase.h"
+	"../Util/Bitset.h"
+	"../Util/log.hpp"
+	"GaUtilityFunction.h"
+
+1565436483 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgenome.cpp
+	"CGenome.h"
+	"CRealgene.h"
+	"CGraygene.h"
+	"CBinarygene.h"
+	"GaUtilityFunction.h"
+	"../IACS.h"
+	"../Util/log.hpp"
+
+1565319596 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\crealgene.h
+	"CGenebase.h"
+	"../IACS.h"
+
+1565319610 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgraygene.h
+	"CGenebase.h"
+	"GaDeclaration.h"
+	"../Util/CRandomgenerator.h"
+	"../IACS.h"
+	"../Util/Bitset.h"
+
+1565403053 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgpopulation.cpp
+	<cmath>
+	<boost/algorithm/string.hpp>
+	<algorithm>
+	"CGpopulation.h"
+	"../Util/log.hpp"
+	"../IACS.h"
+
+1565364120 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cmutator.cpp
+	<cmath>
+	<iostream>
+	"CMutator.h"
+	"GaDeclaration.h"
+	"../Util/log.hpp"
+	"../IACS.h"
+	"../Util/Bitset.h"
+	"../Util/CRandomgenerator.h"
+
+1565364162 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cselector.cpp
+	"CSelector.h"
+	"CGaparameter.h"
+	"CGenome.h"
+	"GaDeclaration.h"
+	"../Util/log.hpp"
+	"../IACS.h"
+	"../Util/CRandomgenerator.h"
+
+1565404125 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\main.cpp
+	<iostream>
+	"CGaparameter.h"
+	"CGAEngine.h"
+
+1565363963 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\ccross.cpp
+	<algorithm>
+	<vector>
+	<iostream>
+	<math.h>
+	"CCross.h"
+	"../Util/CRandomgenerator.h"
+	"GaDeclaration.h"
+	"../Util/Bitset.h"
+	"../Util/log.hpp"
+
+1565402867 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\celist.cpp
+	"CElist.h"
+	"CGaparameter.h"
+	<vector>
+	"../Util/log.hpp"
+
+1565363971 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cevaluator.cpp
+	<float.h>
+	<cmath>
+	"../Util/log.hpp"
+	"CEvaluator.h"
+	"CGpopulation.h"
+	"CGenome.h"
+	"../Util/Bitset.h"
+	"../Util/log.hpp"
+
+1565364199 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cfitnessscaling.cpp
+	<iostream>
+	<math.h>
+	"CFitnessScaling.h"
+	"GaDeclaration.h"
+	"../Util/log.hpp"
+
+1540040231 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaoperatorbase.cpp
+	"CGaOperatorBase.h"
+
+1565321089 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\crealgene.cpp
+	"CRealgene.h"
+	"../Util/CRandomgenerator.h"
+
+1565320852 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgraygene.cpp
+	"CGraygene.h"
+	"../Util/CRandomgenerator.h"
+	"GaUtilityFunction.h"
+	"../Util/log.hpp"
+
+1560330285 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\utilfunction.h
+	<cstddef>
+	<string>
+	"Point-Vector.h"
+	"GaDeclaration.h"
+	"Bitset.h"
+	"../IACS.h"
+
+1560330400 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\gautilityfunction.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<cmath>
+	<ctime>
+	"../IACS.h"
+	"GaUtilityFunction.h"
+
+1565436207 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\log.cpp
+	"log.hpp"
+
+1539981558 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\prefixedoutstream.cpp
+	"prefixedoutstream.hpp"
+
+1539981508 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\crandomgenerator.cpp
+	<boost/random.hpp>
+	<time.h>
+	<limits>
+	"CRandomgenerator.h"
+

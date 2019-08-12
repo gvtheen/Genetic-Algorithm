@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GAZJUT" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GAZJUT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GAZJUT" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="IACS.h" />
+		<Unit filename="Util/Bitset.h" />
+		<Unit filename="Util/CRandomgenerator.cpp" />
+		<Unit filename="Util/CRandomgenerator.h" />
+		<Unit filename="Util/log.cpp" />
+		<Unit filename="Util/log.hpp" />
+		<Unit filename="Util/nulloutstream.hpp" />
+		<Unit filename="Util/prefixedoutstream.cpp" />
+		<Unit filename="Util/prefixedoutstream.hpp" />
+		<Unit filename="Util/prefixedoutstream_impl.hpp" />
+		<Unit filename="include/CBinarygene.h" />
+		<Unit filename="include/CCross.h" />
+		<Unit filename="include/CElist.h" />
+		<Unit filename="include/CEvaluator.h" />
+		<Unit filename="include/CFitnessScaling.h" />
+		<Unit filename="include/CGAEngine.h" />
+		<Unit filename="include/CGaOperatorBase.h" />
+		<Unit filename="include/CGaparameter.h" />
+		<Unit filename="include/CGeneBase.h" />
+		<Unit filename="include/CGenome.h" />
+		<Unit filename="include/CGpopulation.h" />
+		<Unit filename="include/CGraygene.h" />
+		<Unit filename="include/CMutator.h" />
+		<Unit filename="include/CRealgene.h" />
+		<Unit filename="include/CSelector.h" />
+		<Unit filename="include/GaDeclaration.h" />
+		<Unit filename="include/GaUtilityFunction.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/CBinarygene.cpp" />
+		<Unit filename="src/CCross.cpp" />
+		<Unit filename="src/CElist.cpp" />
+		<Unit filename="src/CEvaluator.cpp" />
+		<Unit filename="src/CFitnessScaling.cpp" />
+		<Unit filename="src/CGAEngine.cpp" />
+		<Unit filename="src/CGaOperatorBase.cpp" />
+		<Unit filename="src/CGaparameter.cpp" />
+		<Unit filename="src/CGeneBase.cpp" />
+		<Unit filename="src/CGenome.cpp" />
+		<Unit filename="src/CGpopulation.cpp" />
+		<Unit filename="src/CGraygene.cpp" />
+		<Unit filename="src/CMutator.cpp" />
+		<Unit filename="src/CRealgene.cpp" />
+		<Unit filename="src/CSelector.cpp" />
+		<Unit filename="src/GaUtilityFunction.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
