@@ -10,6 +10,7 @@ class CRandomgenerator
     public:
         static unsigned int classcalled;
         CRandomgenerator();
+
         double uniformRandom01(int seedNum);
         int uniformRandomRandge(int start, int stop,int seedNum);
         Vector3 randomVector01(int seedNum);
