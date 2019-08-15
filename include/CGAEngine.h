@@ -24,7 +24,7 @@ class CGaparameter;
 class CGAEngine
 {
 	public:
-		CGAEngine(CGaparameter*);
+		CGAEngine(CGaparameter*,EVALUATOR_FUN);
 		~CGAEngine();
 
 //        void SetVarRange(const std::vector<IACSZJUT::VarRangeStruct>&);
@@ -36,6 +36,7 @@ class CGAEngine
 	    std::vector<CGaOperatorBase*>                 m_GeneticOperator;
         CGpopulation                                 *m_pCurrentPopulation;
         CGaparameter                                 *m_pGaparameter;
+                        EVALUATOR_FUN                 m_evaluator_fun;
 
 
 };

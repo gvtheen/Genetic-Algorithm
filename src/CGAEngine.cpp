@@ -46,9 +46,10 @@ using CALCZJUT::CParameter;
 
 namespace GAZJUT{
 
-CGAEngine::CGAEngine(CGaparameter* para)
+CGAEngine::CGAEngine(CGaparameter* para,EVALUATOR_FUN _fun)
 {
     m_pGaparameter=para;
+    m_evaluator_fun=_fun;
 }
 
 CGAEngine::~CGAEngine()
@@ -66,7 +67,7 @@ void CGAEngine::init()
 
    m_pCurrentPopulation = new CGpopulation(m_pGaparameter);
 
-   m_GeneticOperator.push_back(new CEvaluator());
+   m_GeneticOperator.push_back(new CEvaluator(m_evaluator_fun));
    m_GeneticOperator.push_back(new CFitnessScaling());
    m_GeneticOperator.push_back(new CElist());
    m_GeneticOperator.push_back(new CSelector());
@@ -76,102 +77,6 @@ void CGAEngine::init()
    Log::Info<<"End Initialize GA Engine....."<< std::endl;
 
 }
-/*
-1. According the inputting setting, construct Fitness calculator (such as VASP, GAUSSSIAN, DMOL, LAMMPS )
-2. According the inputting setting, construct Calculation modes(such as pure cluster, adsorbent/cluster, adsorbent/2DSupport )
-3. Construct population,initialize genome and gene.
-4. Construct GAoperators: selector, crosser, mutator, elitor,
-*/
-/* void CGAEngine::init()
- * {
- *
- *    Log::Info<<"Initialize GA Engine....."<< std::endl;
- *
- *    std::vector<std::string> res;
- *
- *    m_pParameter->GetEvaluateEXE(res);
- *
- *    for(size_t i=0;i<res.size();i++){
- *        if(res[i]=="VASP")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeVASP(this->m_pParameter));
- *        else if(res[i]=="DMOL")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeDMol(this->m_pParameter));
- *        else if(res[i]=="GAUSSIAN")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeGaussian(this->m_pParameter));
- *        else if(res[i]=="LAMMPS")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeLammps(this->m_pParameter));
- *        else if(res[i]=="DFTB")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeDFTB(this->m_pParameter));
- *        else if(res[i]=="CASTEP")
- *            m_FitnessCalculator.push_back(new CALCZJUT::CExeCastep(this->m_pParameter));
- *    }
- *    if(this->m_FitnessCalculator.size()==0){
- *       Log::Error<< "No fitness calculator!! CGAEngine::init()!\n";
- *       boost::throw_exception(std::runtime_error("No fitness calculator!!! CGAEngine::init()!\n"));
- *    }
- *
- *    Log::Info<<"  Initialize structural pool....."<< std::endl;
- *
- *    switch ((int)m_pParameter->simulationMode)
- *    {
- *        case CParameter::CLUSTER:
- *            m_pStructurePool = new CALCZJUT::CStructPoolCluster(this->m_pParameter);
- *            break;
- *        case CParameter::PERIODIC:
- *            break;
- *        case CParameter::MOL_2DMATERIAL:                 // It is just the same as that of MOL_CLUSTER.
- *        case CParameter::MOL_CLUSTER2DMATERIAL:
- *        case CParameter::MOL_CLUSTER:
- *            m_pStructurePool = new CALCZJUT::CStructPoolSupported(this->m_pParameter);
- *            break;
- *        default:
- *            break;
- *    }
- * //   #ifdef DEBUG
- * //      Log::Debug<<"*********** CGAEngine::init()-3***********"<< std::endl;
- * //   #endif
- *
- *      Initialize structural pool( read structural file or random identify it)
- *      Obtain the gene-variable range for the construction of Population object
- *
- *    this->m_pStructurePool->init();
- *    //set gene variable range
- *    std::vector <IACSZJUT::VarRangeStruct> geneRange;
- *    m_pStructurePool->VarRangeStructRange(geneRange);
- *
- * //   #ifdef DEBUG
- * //      Log::Debug<<"*********** CGAEngine::init()-5***********"<< std::endl;
- * //   #endif
- *    this->m_pGaparameter->setVarRange(geneRange);
- *
- * //   #ifdef DEBUG
- * //      Log::Debug<<"m_FitnessCalculator:"<<m_FitnessCalculator.size()<<std::endl;
- * //   #endif
- *    Log::Info<<"  Initialize fitness calculator....."<< std::endl;
- *
- *    for(size_t i=0;i<m_FitnessCalculator.size();i++)
- *         m_FitnessCalculator[i]->init();
- *    // until now, all parameters in object of Gaparameter were set.
- *    //
- *    #ifdef DEBUG
- *       Log::Debug<<"*********** CGAEngine::init()-6***********"<< std::endl;
- *    #endif
- *    m_pCurrentPopulation = new CGpopulation(m_pGaparameter);
- *
- *    Log::Info<<"  Initialize genetic operators....."<< std::endl;
- *
- *    // sequence of operators!
- *    m_GeneticOperator.push_back(new CEvaluator(m_FitnessCalculator,m_pStructurePool));
- *    m_GeneticOperator.push_back(new CFitnessScaling());
- *    m_GeneticOperator.push_back(new CElist());
- *    m_GeneticOperator.push_back(new CSelector());
- *    m_GeneticOperator.push_back(new CCross());
- *    m_GeneticOperator.push_back(new CMutator());
- *
- *     Log::Info<<"End initialization of GA Engine"<< std::endl;
- *
- * }
- */
 void CGAEngine::evolve()
 {
    // read the setting generation number

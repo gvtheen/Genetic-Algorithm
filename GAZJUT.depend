@@ -18,7 +18,7 @@
 	"../Util/Bitset.h"
 	"../IACS.h"
 
-1553219400 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\gadeclaration.h
+1565880621 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\gadeclaration.h
 
 1565316067 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\bitset.h
 	<boost/dynamic_bitset.hpp>
@@ -30,7 +30,7 @@
 	"assert.h"
 	<iostream>
 
-1538303911 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\crandomgenerator.h
+1565624896 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\crandomgenerator.h
 	"Point-Vector.h"
 
 1538573561 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\util\point-vector.h
@@ -75,7 +75,7 @@
 	"../Util/Bitset.h"
 	"../IACS.h"
 
-1565403370 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaengine.cpp
+1565880738 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaengine.cpp
 	"CGAEngine.h"
 	"CSelector.h"
 	"CEvaluator.h"
@@ -89,14 +89,14 @@
 	"../Util/log.hpp"
 	"../IACS.h"
 
-1560321981 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaengine.h
+1565880703 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaengine.h
 	<iostream>
 	<vector>
 	"GaDeclaration.h"
 	"GaUtilityFunction.h"
 	"../IACS.h"
 
-1538749258 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cselector.h
+1565533441 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cselector.h
 	"CGpopulation.h"
 	"CGaOperatorBase.h"
 
@@ -109,14 +109,14 @@
 	"GaDeclaration.h"
 	"../IACS.h"
 
-1565148510 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaparameter.h
+1565534317 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaparameter.h
 	<string>
 	<map>
 	<vector>
 	"GaDeclaration.h"
 	"../IACS.h"
 
-1565362555 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgenome.h
+1565534745 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgenome.h
 	<vector>
 	<string>
 	"CGenebase.h"
@@ -127,7 +127,7 @@
 1538738370 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cgaoperatorbase.h
 	"CGpopulation.h"
 
-1560334024 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cevaluator.h
+1565880647 f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\include\cevaluator.h
 	<vector>
 	<map>
 	<iostream>
@@ -154,7 +154,7 @@
 	"CGaOperatorBase.h"
 	"CGpopulation.h"
 
-1565436567 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaparameter.cpp
+1565451662 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgaparameter.cpp
 	"CGaparameter.h"
 	"GaUtilityFunction.h"
 	"../Util/log.hpp"
@@ -166,7 +166,7 @@
 	"../Util/log.hpp"
 	"GaUtilityFunction.h"
 
-1565436483 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgenome.cpp
+1565534799 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cgenome.cpp
 	"CGenome.h"
 	"CRealgene.h"
 	"CGraygene.h"
@@ -204,7 +204,7 @@
 	"../Util/Bitset.h"
 	"../Util/CRandomgenerator.h"
 
-1565364162 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cselector.cpp
+1565537005 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cselector.cpp
 	"CSelector.h"
 	"CGaparameter.h"
 	"CGenome.h"
@@ -213,7 +213,7 @@
 	"../IACS.h"
 	"../Util/CRandomgenerator.h"
 
-1565404125 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\main.cpp
+1565880782 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\main.cpp
 	<iostream>
 	"CGaparameter.h"
 	"CGAEngine.h"
@@ -235,7 +235,7 @@
 	<vector>
 	"../Util/log.hpp"
 
-1565363971 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cevaluator.cpp
+1565880640 source:f:\glzhuang-important\computer_study\design_by_c_plus_plus\ga-algorithm\src\cevaluator.cpp
 	<float.h>
 	<cmath>
 	"../Util/log.hpp"

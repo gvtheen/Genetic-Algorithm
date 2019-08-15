@@ -34,6 +34,7 @@ typedef enum EM08{BINARY=0x8001,
                   GRAY=0x8002,
                   REAL=0x8003}          E_CODE_TYPE;
 
+typedef double (*EVALUATOR_FUN)(const std::vector<double>&);
 
 }
 
